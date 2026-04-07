@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiharu Shiota: Linhas da Vida – Wikipédia</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; display: grid; grid-template-columns: 200px 1fr 250px; color: #202122; background: #fff; }
+        
+        header { grid-column: 1 / 4; display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; border-bottom: 1px solid #eaecf0; }
+        .search { border: 1px solid #a2a9b1; padding: 5px; width: 400px; display: flex; background: #fff; }
+        .search input { border: none; width: 100%; outline: none; }
+
+        aside.left { padding: 20px; border-right: 1px solid #f6f6f6; }
+        .logo { width: 120px; margin-bottom: 20px; }
+
+        main { padding: 0 25px; min-height: 80vh; }
+        .tabs { display: flex; border-bottom: 1px solid #a2a9b1; margin-bottom: 20px; }
+        .tab { padding: 10px 15px; font-size: 14px; color: #36c; cursor: pointer; }
+        .tab.active { color: #000; border-bottom: 3px solid #36c; font-weight: bold; }
+
+        h1 { font-family: serif; font-size: 32px; border-bottom: 1px solid #a2a9b1; padding-bottom: 5px; margin-top: 10px; }
+        
+        .portais { display: flex; margin: 20px 0; border: 1px solid #c8ccd1; }
+        .p-item { flex: 1; text-align: center; padding: 12px; font-size: 13px; border-top: 5px solid; background: #f8f9fa; cursor: pointer; transition: 0.2s; }
+        .p-item:hover { background: #eef1f3; transform: translateY(-2px); }
+        
+        .c1 { border-top-color: #8da42e; } 
+        .c2 { border-top-color: #448833; } 
+        .c3 { border-top-color: #338877; } 
+        .c4 { border-top-color: #334488; }
+
+        #info-content { 
+            background: #fdfdfd; 
+            padding: 25px; 
+            border: 1px dashed #a2a9b1; 
+            margin-top: 20px;
+            line-height: 1.6;
+            transition: opacity 0.3s;
+        }
+
+        .right { padding: 20px; border-left: 1px solid #eaecf0; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-weight: bold; font-size: 18px;">☰ &nbsp; <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Wikipedia_wordmark.svg" height="20"></div>
+    <div class="search"><input type="text" placeholder="Pesquisar na Wikipédia"><button>Procurar</button></div>
+    <div style="color: #36c; font-size: 12px;">Criar conta | Entrar</div>
+</header>
+
+<aside class="left">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png">
+    <div style="color:#36c; font-size: 14px; line-height: 2;">
+        Página principal<br>Conteúdo destacado<br>Eventos atuais
+    </div>
+</aside>
+
+<main>
+    <div class="tabs">
+        <div class="tab active">Artigo</div>
+        <div class="tab">Discussão</div>
+        <div style="flex-grow: 1;"></div>
+        <div class="tab">Ler</div>
+        <div class="tab">Ver histórico</div>
+    </div>
+
+    <h1>Chiharu Shiota: Linhas da Vida</h1>
+    <p><i>Origem: Wikipédia, a enciclopédia livre.</i></p>
+
+    <div class="portais">
+        <div class="p-item c1" onclick="carregarInfo('artista')">A Artista</div>
+        <div class="p-item c2" onclick="carregarInfo('exposicao')">A Exposição</div>
+        <div class="p-item c3" onclick="carregarInfo('pele')">Obra: Pele</div>
+        <div class="p-item c4" onclick="carregarInfo('linha')">Obra: Linha Interna</div>
+    </div>
+
+    <div id="info-content">
+        <h3>Selecione um tópico</h3>
+        <p>Clique em um dos botões coloridos acima para ver as informações sobre Chiharu Shiota.</p>
+    </div>
+</main>
+
+<div class="right">
+    <b>Aparência</b> <span style="color:#36c; float:right">ocultar</span>
+    <hr>
+    <p>Modo Aniversário</p>
+    <input type="radio" checked> Ativado<br>
+    <input type="radio"> Desativado
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
